@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:  sans-serif;
+    font-size: 0.8rem;
+    background-color: #F0F1F5;
+}
+
+nav{
+    
+    display: flex;
+    padding: 0 2rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: whitesmoke;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+nav ul li{
+    transition: all 0.3s ease-out;
+}
+
+.item{
+    display: none;
+}
+
+.menu{
+    padding: 5px;
+}
+
+nav ul li:hover{
+    padding: 15px;
+    background-color:#FF5733;
+    border-radius: 10px;
+    font-weight: 800;
+}
+
+.logo{
+    width: 19rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.logo h2{
+    font-size: 1.7rem;
+}
+
+.logo p{
+    font-family: "Urbanist", sans-serif;
+    width: 6rem;
+    font-weight: 200;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+main{
+    
+    display:grid;
+    grid-template-columns: 1fr;
+    background-color:#FAF7F0;
+    
+}
+
+
+
+main img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 25rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/portada.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+
+
+.presentacion h3{
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    color: #FF5733;
+}
+
+.presentacion p{
+    margin: 10px;
+    font-size: 1.2rem;
+}
+
+.titulo h3{
+    text-align: center;
+    font-size: 2rem;
+    color: #FF5733;
+}
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    gap: 15px; 
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 21px -3px rgba(120,118,118,0.75);
+    margin: 10px; 
+}
+
+.img-detalle img{
+    filter: grayscale(100);
+    opacity: 0.6;
+    transition: opacity 0.3s ease-out;
+}
+
+.img-detalle img:hover{
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #333;
+    color: whitesmoke;
+    transition: background-color 0.3s ease-in-out;
+}
+
+footer:hover {
+    background-color: #FF5733; 
+}
+
+.rrss-icon {
+    letter-spacing: 5px;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+footer p {
+    text-align: center;
+}
